@@ -1,0 +1,109 @@
+/* Layout */
+.wrap.spacewatch {
+
+}
+.wrap.spacewatch h2 .version {
+    color: #ccc;
+    font-size: .5rem;
+}
+.wrap.spacewatch .sidebar .section {
+    padding: 20px;
+    margin: 0 0 20px;
+}
+.wrap.spacewatch .sidebar .coffee {
+    background: #FFF;
+    border: 1px solid #e1e1e1;
+}
+.wrap.spacewatch .sidebar .coffee p {
+    font-size: 10px;
+    margin-top: 0;
+}
+.wrap.spacewatch .sidebar .coffee .form {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.wrap.spacewatch .sidebar .coffee .form select {
+    font-size: 10px;
+    margin: 0 0 6px;
+    width: 100%;
+}
+.wrap.spacewatch .sidebar .coffee .form button {
+    margin: 0;
+}
+.wrap.spacewatch .sidebar .coffee .form .pixel {
+    position: absolute;
+    top: -9000px;
+    left: -9000px;
+}
+.wrap.spacewatch .sidebar .share {
+    background: #FFF;
+    border: 1px solid #e1e1e1;
+}
+.wrap.spacewatch .sidebar .share ul {
+    margin: 0;
+    padding: 0;
+}
+.wrap.spacewatch .sidebar .share ul li:last-child {
+    margin: 0;
+}
+.wrap.spacewatch .sidebar .share ul li a {
+    margin: 0;
+}
+@media screen and (min-width:900px) {
+    .wrap.spacewatch .content {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 75%;
+    }
+    .wrap.spacewatch .sidebar {
+        float: right;
+        margin: 3.125rem 0 20px;
+        padding: 0;
+        width: 25%;
+    }
+    .wrap.spacewatch .sidebar > .inner {
+        padding: 0 0 0 20px;
+    }
+}
+
+/* Buttons */
+.wrap.spacewatch .sidebar .button {
+    color: #FFF;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+.wrap.spacewatch .sidebar .button.button-donate {
+    background-color: #e48e07;
+    background-image: -webkit-linear-gradient(#e7a439, #e48e07);
+    background-image: linear-gradient(to bottom, #e7a439, #e48e07);
+    border-color: #e7a439 #e7a439 #ba7604;
+    box-shadow: 0 1px 0 rgba(230, 192, 120, 0.5) inset;
+}
+.wrap.spacewatch .sidebar .button.button-donate:hover {background:#e48e07;}
+.wrap.spacewatch .sidebar .button.button-rate {
+    background-color: #999;
+    background-image: -webkit-linear-gradient(#888, #666);
+    background-image: linear-gradient(to bottom, #888, #666);
+    border-color: #777 #777 #444;
+    box-shadow: 0 1px 0 rgba(180, 180, 180, 0.5) inset;
+}
+.wrap.spacewatch .sidebar .button.button-rate:hover {background:#666;}
+.wrap.spacewatch .sidebar .button.button-tweet {
+    background-color: #1094bf;
+    background-image: -webkit-linear-gradient(#2aadd8, #1094bf);
+    background-image: linear-gradient(to bottom, #2aadd8, #1094bf);
+    border-color: #10a1d1 #10a1d1 #0e80a5;
+    box-shadow: 0 1px 0 rgba(120, 203, 230, 0.5) inset;
+}
+.wrap.spacewatch .sidebar .button.button-tweet:hover {background:#1094bf;}
+.wrap.spacewatch .sidebar .button.button-share {
+    background-color: #3b5998;
+    background-image: -webkit-linear-gradient(#4e69a2, #3b5998);
+    background-image: linear-gradient(to bottom, #4e69a2, #3b5998);
+    border-color: #4e69a2 #3b5998 #294079;
+    box-shadow: 0 1px 0 rgba(120, 203, 230, 0.5) inset;
+}
+.wrap.spacewatch .sidebar .button.button-share:hover {background:#3b5998;}

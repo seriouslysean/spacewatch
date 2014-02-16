@@ -1,0 +1,66 @@
+/* Fixes */
+#dashboard_right_now .spacewatch,
+#dashboard_right_now .spacewatch *,
+#dashboard_right_now .spacewatch *:before,
+#dashboard_right_now .spacewatch *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Overrides */
+#dashboard_right_now .spacewatch a:before,
+#dashboard_right_now .spacewatch span:before {
+    display: none!important;
+}
+
+/* Styles */
+#dashboard_right_now .spacewatch,
+#dashboard_right_now .spacewatch > .progress,
+#dashboard_right_now .spacewatch > .progress > .percentage {
+    clear: both;
+    display: block;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+#dashboard_right_now .spacewatch {
+    margin: 0 0 10px;
+}
+#dashboard_right_now .spacewatch > .progress {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 5px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    -moz-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+#dashboard_right_now .spacewatch > .progress > .percentage {
+    background: #43ac6a none;
+    border: 1px solid #3a945b;
+    color: #FFF;
+    height: 14px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+#dashboard_right_now .spacewatch > .progress[data-warning-level='1'] > .percentage {
+    background-color: #eef024;
+    border-color: #b6b728;
+    color: #FFF;
+}
+#dashboard_right_now .spacewatch > .progress[data-warning-level='2'] > .percentage {
+    background-color: #f08a24;
+    border-color: #de770f;
+    color: #FFF;
+}
+#dashboard_right_now .spacewatch > .progress[data-warning-level='3'] > .percentage {
+    background-color: #f04124;
+    border-color: #cf280e;
+    color: #FFF;
+}
