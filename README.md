@@ -32,8 +32,16 @@ Feel free to post any bugs, feature requests or comments on the [Spacewatch Issu
 
 ## Changelog
 
+### 1.0.2
+
+* Added support for WordPress version 3.5+
+* Added standalone widget for versions before 3.8
+
+### 1.0.1
+
+* Fixed social links
+* Fixed alert background image path
+
 ### 1.0.0
 
 * Initial release
-
-## Upgrade Notice
