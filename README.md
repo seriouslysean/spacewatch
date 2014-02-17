@@ -30,17 +30,6 @@ Make sure that you have enabled the *At a Glance* dashboard widget. Once you've 
 
 Feel free to post any bugs, feature requests or comments on the [Spacewatch Issues](https://github.com/seriouslysean/spacewatch/issues) page and I'll get to them as soon as I'm able!
 
-## Screenshots
-
-![dashboard widget](assets/screenshot-1.png)
-The dashboard widget fits in with any theme and will change color based on your warning level. Hovering will show you the free space currently available.
-
-![email notifications](assets/screenshot-2.png)
-Email notifications can be enabled or disabled from the Tools > Spacewatch options page.
-
-![email template](assets/screenshot-3.png)
-This is what the notification email looks like. The Spacewatch Robot cares.
-
 ## Changelog
 
 ### 1.0.0
