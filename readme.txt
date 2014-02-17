@@ -2,13 +2,13 @@
 Contributors: seriouslysean
 Donate link: http://devjunkyard.com/spacewatch/
 Tags: PHP, Monitor, Disk Space, Email Alert, Notifications, Usage, Storage, Tools
-Requires at least: 2.8
+Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
-Monitor the available free space on your server with a dashboard widget and optional notification that gets sent when you reach a specified threshold
+Monitor the space on your server with a simple dashboard widget. You can also enable a notification that gets sent when you hit a specified threshold.
 
 == Description ==
 
@@ -47,6 +47,11 @@ Feel free to post any bugs, feature requests or comments at the [Spacewatch Issu
 
 == Changelog ==
 
+= 1.0.2 =
+
+* Added support for WordPress version 3.5+
+* Added standalone widget for versions before 3.8
+
 = 1.0.1 =
 
 * Fixed social links
@@ -57,6 +62,11 @@ Feel free to post any bugs, feature requests or comments at the [Spacewatch Issu
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+
+* Added support for WordPress version 3.5+
+* Added standalone widget for versions before 3.8
 
 = 1.0.1 =
 
