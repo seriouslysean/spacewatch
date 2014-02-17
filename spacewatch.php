@@ -27,6 +27,7 @@ class Spacewatch {
 
     static $instance;
 
+    protected $_wpVersion;
     protected $_pluginPath;
     protected $_pluginUrl;
     protected $_option;
@@ -62,6 +63,7 @@ class Spacewatch {
     }
 
     protected function _init() {
+        $this->_setWpVersion();
         $this->_setPluginPath();
         $this->_setPluginUrl();
         $this->_setTotalSpace();
@@ -99,16 +101,33 @@ class Spacewatch {
     }
 
     protected function _hook() {
+        switch (true) {
+            case ($this->getWpVersion() < 3.8):
+                $this->_hook_37X();
+                break;
+            default:
+                $this->_hook_38X();
+                break;
+        }
         add_action('admin_enqueue_scripts', array($this, 'styles'), 9000);
-        add_action('dashboard_glance_items', array($this, 'dashboard'), 9000);
+        add_action('wp_dashboard_setup', array($this, 'dashboard_standalone'), 9000);
         add_action('admin_menu', array($this, 'settings_menu'), 9000);
         add_filter('plugin_action_links_'.plugin_basename(__FILE__), array($this, 'settings_menu_link'), 9000);
         add_action('admin_init', array($this, 'settings'), 9000);
-        add_action(self::CRON, array($this, 'cron_daily'), 9000); 
+        add_action(self::CRON, array($this, 'cron_daily'), 9000);
+    }
+
+    protected function _hook_37X() {
+
+    }
+
+    protected function _hook_38X() {
+        add_action('dashboard_glance_items', array($this, 'dashboard'), 9000);
     }
 
     public static function defaults() {
         if (!get_option(self::SLUG)) {
+            // Options
             update_option(
                 self::SLUG,
                 array(
@@ -118,6 +137,15 @@ class Spacewatch {
                     'version' => self::VERSION
                 )
             );
+            // Hide dashboard widget
+            $administrators = get_users(array('role'=>'administrator'));
+            foreach ($administrators as $user) {
+                $panels = get_user_option('metaboxhidden_dashboard', $user->ID);
+                if (is_array($panels) && !in_array(self::SLUG, $panels)) {
+                    $hidden = array_merge($panels, array(self::SLUG));
+                    update_user_option($user->ID, 'metaboxhidden_dashboard', $hidden, true);
+                }
+            }
         }
     }
 
@@ -142,6 +170,14 @@ class Spacewatch {
 
     public function dashboard() {
         require_once $this->getPluginPath.'templates/dashboard.php';
+    }
+
+    public function dashboard_standalone() {
+        wp_add_dashboard_widget(
+                 self::SLUG,
+                 self::NAME,
+                 array($this, 'dashboard')
+        );
     }
 
 
@@ -228,6 +264,10 @@ class Spacewatch {
      * SETTERS
      ************************************************/ 
 
+    private function _setWpVersion() {
+        $this->_wpVersion = floatval(get_bloginfo('version'));
+    }
+
     private function _setPluginUrl() {
         $this->_pluginUrl = plugin_dir_url(__FILE__);
     }
@@ -311,6 +351,10 @@ class Spacewatch {
     /*************************************************
      * GETTERS
      ************************************************/ 
+
+    public function getWpVersion() {
+        return $this->_wpVersion;
+    }
 
     public function getPluginUrl() {
         return $this->_pluginUrl;
