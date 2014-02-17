@@ -44,9 +44,9 @@ if (!defined('ABSPATH')) exit;
             
             <div class="section share">
                 <ul>
-                    <li><a href="#" class="button button-rate">Rate It</a></li>
-                    <li><a href="#" class="button button-share">Share It</a></li>
-                    <li><a href="#" class="button button-tweet">Tweet It</a></li>
+                    <li><a href="http://wordpress.org/support/view/plugin-reviews/<?php echo urlencode(self::NAME_LOWER) ?>" class="button button-rate" target="_blank">Rate It</a></li>
+                    <li><a href="http://www.facebook.com/sharer.php?u=<?php echo urlencode(self::DOWNLOAD_URL) ?>" class="button button-share" target="_blank">Share It</a></li>
+                    <li><a href="http://twitter.com/share?url=<?php echo urlencode(self::DOWNLOAD_URL) ?>&text=<?php echo urlencode(self::NAME.' is a great plugin to track your space usage right from the WordPress admin. Try it! #'.self::NAME_LOWER) ?>" class="button button-tweet" target="_blank">Tweet It</a></li>
                 </ul>
             </div>
         </div>

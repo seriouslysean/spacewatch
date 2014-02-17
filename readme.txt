@@ -4,7 +4,7 @@ Donate link: http://devjunkyard.com/spacewatch/
 Tags: PHP, Monitor, Disk Space, Email Alert, Notifications, Usage, Storage, Tools
 Requires at least: 2.8
 Tested up to: 3.8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -15,6 +15,7 @@ Monitor the available free space on your server with a dashboard widget and opti
 Spacewatch gives you a breakdown of the total space available on your server right from your dashboard by appending a small progress bar right to the *At a Glance* widget.
 
 You can also completely configure the notification email:
+
 * Receive daily alerts regardless of warning level
 * Receive daily alerts once you have 41%-60% free space remaining
 * Receive daily alerts once you have 21%-40% free space remaining
@@ -46,10 +47,19 @@ Feel free to post any bugs, feature requests or comments at the [Spacewatch Issu
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Fixed social links
+* Fixed alert background image path
+
 = 1.0.0 =
 
 * Initial release
 
 == Upgrade Notice ==
 
+= 1.0.1 =
+
+* Fixed social links
+* Fixed alert background image path
 

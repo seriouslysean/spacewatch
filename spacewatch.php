@@ -5,7 +5,7 @@ Plugin URI: https://github.com/seriouslysean/spacewatch
 Description: Spacewatch monitors the available space on your webserver and sends an alert you when you reach a specified threshold.
 Author: Sean Kennedy
 Author URI: http://devjunkyard.com
-Version: 1.0.0
+Version: 1.0.1
 License: MIT
 */
 if (!defined('ABSPATH')) exit;
@@ -18,9 +18,10 @@ class Spacewatch {
 
     const NAME = 'Spacewatch';
     const NAME_LOWER = 'spacewatch';
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.1';
     const SLUG = 'spacewatch';
     const CRON = 'spacewatch_cron';
+    const DOWNLOAD_URL = 'http://wordpress.org/plugins/spacewatch';
     const SYSTEM_ROOT = '/';
     const DASHBOARD_CLASS = 'spacewatch';
 
