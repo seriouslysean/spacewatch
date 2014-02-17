@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width" />
 </head>
-<body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #FFFFFF; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; background: #000 url('<?php echo $this->getPluginUrl() ?>assets/background-stars-fade.jpg'); margin: 0; padding: 0;" bgcolor="#000">
+<body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #FFFFFF; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; background: #000 url('<?php echo $this->getPluginUrl() ?>assets/background-stars.jpg'); margin: 0; padding: 0;" bgcolor="#000">
   <style type="text/css">
     a:hover {
       color: #ccc !important;
