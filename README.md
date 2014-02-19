@@ -32,6 +32,11 @@ Feel free to post any bugs, feature requests or comments on the [Spacewatch Issu
 
 ## Changelog
 
+### 1.0.3
+
+* Added standalone widget to all versions of WP
+* Fixed width issue on what's new widget
+
 ### 1.0.2
 
 * Added support for WordPress version 3.5+
