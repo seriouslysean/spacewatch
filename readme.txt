@@ -47,6 +47,11 @@ Feel free to post any bugs, feature requests or comments at the [Spacewatch Issu
 
 == Changelog ==
 
+= 1.0.3 =
+
+* Added standalone widget to all versions of WP
+* Fixed width issue on what's new widget
+
 = 1.0.2 =
 
 * Added support for WordPress version 3.5+
@@ -63,13 +68,15 @@ Feel free to post any bugs, feature requests or comments at the [Spacewatch Issu
 
 == Upgrade Notice ==
 
+= 1.0.3 =
+
+Added a standalone widget to all versions of WP and fixed width issue on what's new widget.
+
 = 1.0.2 =
 
-* Added support for WordPress version 3.5+
-* Added standalone widget for versions before 3.8
+Added support for WordPress version 3.5+ and added a standalone widget for versions before 3.8.
 
 = 1.0.1 =
 
-* Fixed social links
-* Fixed alert background image path
+Fixed a but with the social links and fixed the alert background image path.
 

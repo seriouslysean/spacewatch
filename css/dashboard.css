@@ -13,6 +13,9 @@
 .spacewatch span:before {
     display: none!important;
 }
+#dashboard_right_now li.spacewatch {
+    width: 100%;
+}
 
 /* Styles */
 .spacewatch,
