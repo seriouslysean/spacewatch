@@ -4,7 +4,7 @@ Donate link: http://devjunkyard.com/spacewatch/
 Tags: PHP, Monitor, Disk Space, Email Alert, Notifications, Usage, Storage, Tools
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -47,7 +47,7 @@ Feel free to post any bugs, feature requests or comments at the [Spacewatch Issu
 
 == Changelog ==
 
-= 1.0.4 =
+= 1.0.5 =
 
 * Updating readme for WordPress 3.9
 
