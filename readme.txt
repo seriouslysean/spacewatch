@@ -3,8 +3,8 @@ Contributors: seriouslysean
 Donate link: http://devjunkyard.com/spacewatch/
 Tags: PHP, Monitor, Disk Space, Email Alert, Notifications, Usage, Storage, Tools
 Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 1.0.3
+Tested up to: 3.9
+Stable tag: 1.0.5
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 
@@ -46,6 +46,10 @@ Feel free to post any bugs, feature requests or comments at the [Spacewatch Issu
 3. This is what the notification email looks like. The Spacewatch Robot cares.
 
 == Changelog ==
+
+= 1.0.5 =
+
+* Updating readme for WordPress 3.9
 
 = 1.0.3 =
 
